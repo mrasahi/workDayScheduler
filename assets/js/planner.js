@@ -1,4 +1,4 @@
-// Current time hour in military time to compare easier
+// Current time hour parsed into military time to compare easier
 let currentTime = parseInt(moment().format('HH'))
 
 console.log(currentTime)
@@ -20,3 +20,12 @@ function hourBg() {
 }
 
 hourBg()
+
+// When save button is clicked
+$('.saveBtn').click(function() {
+    // ID value not working yet
+    let thingyTime = $(this).siblings('.description')
+    let thingy = $(this).siblings('.description').val()
+    console.log(thingy)
+    console.log(thingyTime)
+})
