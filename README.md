@@ -3,7 +3,7 @@ Homework05 - Makoto Asahi
 
 # Summary
 
-
+The given CSS stylesheet already has prewritten styles so I tried my best to use them.
 
 ## User Story
 

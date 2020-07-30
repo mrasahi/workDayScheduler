@@ -3,7 +3,7 @@ let currentTime = parseInt(moment().format('HH'))
 
 console.log(currentTime)
 
-// Add class to each time block
+// Add bg class to each time block
 function hourBg() {
     for (i = 9; i <= 17; i++) {
         // Resets classes first
