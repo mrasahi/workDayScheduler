@@ -1,3 +1,8 @@
+// Display current date time in page header
+$('#currentDay').append(moment().format('MMMM Do YYYY, h:mm:ss a'))
+
+console.log(moment().format('MMMM Do YYYY, h:mm:ss a'))
+
 // Current time hour parsed into military time to compare easier
 let currentTime = parseInt(moment().format('HH'))
 
