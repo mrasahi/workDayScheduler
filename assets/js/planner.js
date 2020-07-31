@@ -10,6 +10,7 @@ console.log(currentTime)
 
 // Add bg class to each time block
 function hourBg() {
+    // Loop 9 to 5 in military time
     for (i = 9; i <= 17; i++) {
         // Resets classes first
         $(`#${i}`).removeClass('past present future')
@@ -29,8 +30,21 @@ hourBg()
 // When save button is clicked
 $('.saveBtn').click(function() {
     // ID value not working yet
-    let thingyTime = $(this).siblings('.description')
-    let thingy = $(this).siblings('.description').val()
-    console.log(thingy)
-    console.log(thingyTime)
+    let lsTime = $(this).siblings('.description').attr('id')
+
+    let lsPlan = $(this).siblings('.description').val() || ''
+    console.log(lsTime)
+    console.log(lsPlan)
+    localStorage.setItem(lsTime, lsPlan)
+    console.log(localStorage)
 })
+
+// Write plans stored in Local Storage into boxes
+function lsWrite() {
+    for (let i = 9; i <= 17; i++) {
+        $(`#${i}`).val(localStorage.getItem(`${i}`))
+
+    }
+}
+
+lsWrite()

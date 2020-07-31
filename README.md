@@ -1,9 +1,22 @@
 # workDayScheduler
 Homework05 - Makoto Asahi
 
+Worked together with a study group - closely with Kenny Yang.
+
 # Summary
 
-The given CSS stylesheet already has prewritten styles so I tried my best to use them.
+The given CSS stylesheet already has prewritten styles so I tried my best to preserve them.
+
+Mobile layout had a weird overlap with the buttons.
+> Commented out `height` on `.row` in the CSS file.
+
+The current time and day is displayed on the Header part of the page.
+
+9 AM - 5 PM has text boxes for the user to type and submit their plans
+
+Based on the current time, the page will highlight the time blocks. Past: Gray Current: Red Future: Green
+
+
 
 ## User Story
 
