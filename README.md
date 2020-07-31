@@ -31,8 +31,8 @@ This app will only log events based on time.
 
 **Date changes will *NOT* change its contents**
 
-Tested jQuery `.each()` method and had the same results. It's commented out in the js file.
-> I kept the vanilla loop because I worked on that one first.
+Tested jQuery `.each()` method and had the same results as a vanilla loop.
+> Vanilla loop was commented out because we worked hard on that one.
 
 <hr>
 
