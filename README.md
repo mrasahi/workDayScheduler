@@ -27,7 +27,9 @@ The save button will save the user text input into localStorage.
 Revisiting the page will render inputs saved within localStorage.
 > They will be load title `9` - `17`
 
-This app will only log events based on time. **Date changes will *NOT* change its contents**
+This app will only log events based on time.
+
+**Date changes will *NOT* change its contents**
 
 <hr>
 
