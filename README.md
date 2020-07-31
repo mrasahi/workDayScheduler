@@ -27,23 +27,23 @@ The save button will save the user text input into localStorage.
 Revisiting the page will render inputs saved within localStorage.
 > They will be load title `9` - `17`
 
-This app will only log events based on time. **Date changes will NOT change its contents**
+This app will only log events based on time. **Date changes will *NOT* change its contents**
 
 <hr>
 
-<img src="./assets/img/preview1.jpg" alt="planner preview img 1">
+<img src="./assets/img/preview1.jpg" width = "100%">
 
-Mobile responsive
-
-<hr>
-
-<img src="./assets/img/preview2.jpg" alt="planner preview img 2">
+### Mobile responsive
 
 <hr>
 
-Easily see highlighted time blocks
+<img src="./assets/img/preview2.jpg" width = "100%">
 
-<img src="./assets/img/preview3.jpg" alt="planner preview img 3">
+### Easily see highlighted time blocks
+
+<hr>
+
+<img src="./assets/img/preview3.jpg" width = "100%">
 
 ## User Story
 
