@@ -31,6 +31,9 @@ This app will only log events based on time.
 
 **Date changes will *NOT* change its contents**
 
+Tested jQuery `.each()` method and had the same results. It's commented out in the js file.
+> I kept the vanilla loop because I worked on that one first.
+
 <hr>
 
 <img src="./assets/img/preview1.jpg" width = "100%">
