@@ -10,6 +10,9 @@ setInterval(() => {
 // Current time hour parsed into military time to compare easier
 let currentTime = parseInt(moment().format('HH'))
 
+// For time travelling
+// let currentTime = 14
+
 console.log(currentTime)
 
 // Add bg class to each time block
@@ -29,7 +32,18 @@ function hourBg() {
     }
 }
 
-hourBg()
+// hourBg()
+
+// Testing .each() in jQuery
+$('.description').each(function() {
+    if (parseInt($(this).attr('id')) < currentTime) {
+        $(this).addClass('past')
+    } else if (parseInt($(this).attr('id')) === currentTime) {
+        $(this).addClass('present')
+    } else {
+        $(this).addClass('future')
+    }
+})
 
 // When save button is clicked
 $('.saveBtn').click(function() {
@@ -51,4 +65,10 @@ function lsWrite() {
     }
 }
 
-lsWrite()
+// lsWrite()
+
+// Testing .each()
+$('.description').each(function() {
+    $(this).val(localStorage.getItem($(this).attr('id')))
+    console.log($(this).attr('id'))
+})
