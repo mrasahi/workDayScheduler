@@ -1,7 +1,11 @@
 // Display current date time in page header
-$('#currentDay').append(moment().format('MMMM Do YYYY, h:mm:ss a'))
-
+$('#currentDay').html(moment().format('MMMM Do YYYY, h:mm:ss a'))
 console.log(moment().format('MMMM Do YYYY, h:mm:ss a'))
+
+// Update time every 1 second
+setInterval(() => {
+    $('#currentDay').html(moment().format('MMMM Do YYYY, h:mm:ss a'))
+}, 1000);
 
 // Current time hour parsed into military time to compare easier
 let currentTime = parseInt(moment().format('HH'))
@@ -29,21 +33,21 @@ hourBg()
 
 // When save button is clicked
 $('.saveBtn').click(function() {
-    // ID value not working yet
     let lsTime = $(this).siblings('.description').attr('id')
-
-    let lsPlan = $(this).siblings('.description').val() || ''
+    let lsPlan = $(this).siblings('.description').val()
     console.log(lsTime)
     console.log(lsPlan)
-    localStorage.setItem(lsTime, lsPlan)
+    // Store data into localStorage only if text is written
+    if (lsPlan !== '') {
+        localStorage.setItem(lsTime, lsPlan)
+    }
     console.log(localStorage)
 })
 
-// Write plans stored in Local Storage into boxes
+// Write plans stored in localStorage into boxes loop
 function lsWrite() {
     for (let i = 9; i <= 17; i++) {
         $(`#${i}`).val(localStorage.getItem(`${i}`))
-
     }
 }
 

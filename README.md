@@ -3,20 +3,37 @@ Homework05 - Makoto Asahi
 
 Worked together with a study group - closely with Kenny Yang.
 
+
+Deployed Link:
+https://mrasahi.github.io/workDayScheduler/
+
 # Summary
 
 The given CSS stylesheet already has prewritten styles so I tried my best to preserve them.
 
 Mobile layout had a weird overlap with the buttons.
-> Commented out `height` on `.row` in the CSS file.
+> Commented out `height` on `.row` in the CSS file to solve this problem.
 
 The current time and day is displayed on the Header part of the page.
 
 9 AM - 5 PM has text boxes for the user to type and submit their plans
 
-Based on the current time, the page will highlight the time blocks. Past: Gray Current: Red Future: Green
+Based on the current time, the page will highlight the time blocks.
 
+`Past: Gray`  `Current: Red`  `Future: Green`
 
+The save button will save the user text input into localStorage.
+
+Revisiting the page will render inputs saved within localStorage.
+> They will be load title `9` - `17`
+
+This app will only log events based on time. **Date changes will its contents**
+
+<img src="./assets/img/preview1.jpg" alt="planner preview img 1">
+
+<img src="./assets/img/preview2.jpg" alt="planner preview img 2">
+
+<img src="./assets/img/preview3.jpg" alt="planner preview img 3">
 
 ## User Story
 
